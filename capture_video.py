@@ -52,7 +52,7 @@ out = cv2.VideoWriter(filename, get_video_type(filename), 25, get_dims(cap, res)
 
 while True:
     ret, frame = cap.read()
-    out.write(frame)   ##write frames in filenmae 
+    out.write(frame)   ##write frames in filenmae you provided
     cv2.imshow('frame',frame) ##show the frames on your monitor while capturing 
     if cv2.waitKey(1) & 0xFF == ord('q'):    ##press "q" to stop capturing
         break
